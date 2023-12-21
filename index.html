@@ -12,22 +12,101 @@
 </head>
 
 <body>
-    <header>
-        <div class="app_header">
+    <div class="app__background">
+        <nav class="menu">
+            <div class="rightMenu">
+                <img class="logo" src="IMG/logo.png" alt="Netflix">
+                <ul class="links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Bombando</a></li>
+                    <li><a href="#">Minha lista</a></li>
+                </ul>
+            </div>
+            <div class="leftMenu">
+                <img class="lupa" src="IMG/lupa.png">
+                <i class="bi bi-bell-fill"></i>
+                <div class="perfil">
+                    <img class="user" src="IMG/user.png" alt="Perfil">
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+            </div>
+        </nav>
+        <header class="app_header">
+
             <img class="imgTitle" src="IMG/appTitle.png">
-            <p class="sinopse">Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da industria farmacêutica.</p>
+            <p class="sinopse">Em uma penitenciária de última geração, um detento participa de um experimento com
+                drogas que controlam as emoções para um gênio da industria farmacêutica.</p>
             <div class="header_btns">
                 <button class="btn view"><i class="bi bi-play-fill"></i>Assistir</button>
                 <button class="btn info"><i class="bi bi-info-circle-fill"></i>Mais informações</button>
             </div>
-        </div>
-    </header>
-    <main>
 
-    </main>
-    <footer>
+        </header>
+        <main>
+            <h2 class="categoria">Minha lista</h2>
+            <section  class="trilho favoritos">
+                <img class="item" src="IMG/Tr1/poster_01.png" alt="bojack horsemam">
+                <img class="item" src="IMG/Tr1/poster_02.png" alt="Ozark">
+                <img class="item" src="IMG/Tr1/poster_03.png" alt="A vizinha da mulher na janela">
+                <img class="item" src="IMG/Tr1/poster_04.png" alt="Break Bad">
+                <img class="item" src="IMG/Tr1/poster_05.png" alt="The end of the fucking world">
+            </section>
+            
+            <h2 class="categoria">Em alta</h2>
+            <section class="trilho emAlta">
+                <img class="item" src="IMG/Tr2/poster_01.png" alt="bojack horsemam">
+                <img class="item" src="IMG/Tr2/poster_02.png" alt="Ozark">
+                <img class="item" src="IMG/Tr2/poster_03.png" alt="A vizinha da mulher na janela">
+                <img class="item" src="IMG/Tr2/poster_04.png" alt="Break Bad">
+                <img class="item" src="IMG/Tr2/poster_05.png" alt="The end of the fucking world">
+            </section>
 
-    </footer>
+            <h2 class="categoria">Séries Estrangeiras</h2>
+            <section class="trilho emAlta">
+                <img class="item" src="IMG/Tr3/poster_01.png" alt="bojack horsemam">
+                <img class="item" src="IMG/Tr3/poster_02.png" alt="Ozark">
+                <img class="item" src="IMG/Tr3/poster_03.png" alt="A vizinha da mulher na janela">
+                <img class="item" src="IMG/Tr3/poster_05.png" alt="Break Bad">
+                <img class="item" src="IMG/Tr3/poster_06.png" alt="The end of the fucking world">
+            </section>
+
+        </main>
+        <footer>
+            <div class="midia">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>  
+            </div>
+            <div class="informacoes">
+                <ul>
+                    <li><a href="#">Idioma e legendas</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Entre em contato</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Audiodescrição</a></li>
+                    <li><a href="#">Relação com investidores</a></li>
+                    <li><a href="#">Avisos legais</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Centro de ajuda</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Preferência de cookies</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Cartão pré-pago</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Informações corporativas</a></li>
+                </ul>
+            </div>
+            <button class="btnService">Código de serviço</button>
+            <p>&#169; 1997-2022 Netflix, Inc.</p>
+        </footer>
+    </div>
 </body>
 
 </html>

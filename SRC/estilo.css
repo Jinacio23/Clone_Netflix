@@ -3,22 +3,86 @@
    padding: 0;
    box-sizing: border-box;
    font-family: sans-serif;
+   list-style: none;
 }
 
 body{
-    background-image: url(../IMG/appBg.png);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    
+    background-color: #000;
 }
 
-header{
-    width: 100vw;
-    padding: 154px 880px 180px 65px;
+.app__background{
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9) 5%,
+        rgba(0, 0, 0, 0.2) 20%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 1) 100%
+      ),url(../IMG/appBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 60px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.rightMenu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.links li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.logo{
+    width: 115px;
+}
+
+.leftMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+.lupa{
+    width: 22px;
+}
+.leftMenu .bi{
+    font-size: 20px;
+    color: #fff;
+}
+.perfil{
+    position: relative;
+    width: 60px;
+    height: 40px;
+}
+.perfil .user{
+    width: 35px;
+    border-radius: 5px;
+}
+.perfil .bi{
+    position: absolute;
+    top: 14px;
+    left: 38px;
+    font-size: 16px;
 }
 
 .app_header{
-    width: 100%;
+    width: 415px;
+    padding: 80px 0;
 }
 
 .imgTitle {
@@ -70,3 +134,67 @@ header{
     color: #fff;
 }
 
+.categoria{
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 25px;
+}
+.trilho{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    max-height: 134px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.item{
+    width: 100%;
+    height: auto;
+    transition: .8s;
+}
+.trilho .item:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+footer .midia{
+    margin-bottom: 25px;
+}
+footer .bi{
+    color: #fff; 
+    font-size: 22px;
+    margin-right: 20px; 
+}
+
+footer .informacoes{
+    display: flex;
+    gap: 170px;
+}
+footer .informacoes ul li{
+    margin-bottom: 14px;
+}
+footer .informacoes ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .informacoes ul a:hover{
+    text-decoration: underline;
+}
+
+.btnService{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px;
+    margin: 16px 0 ;
+    cursor: pointer;
+}
+
+footer p{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 16px;
+}
